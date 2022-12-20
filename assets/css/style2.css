@@ -23,9 +23,8 @@
     text-decoration: underline;
 }
 
-.navTitle:visited {
-    text-decoration: none;
-    color: white;
+.navTitle.One:hover {
+    text-decoration: underline;
 }
 
 .navTitle.One {
