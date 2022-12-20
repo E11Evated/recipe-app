@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.NavBar
+{
+    display: flex;
+    align-items: baseline;
+    z-index: 50;
+    height: 100px;
+    background-color: black;
+    border-bottom: 20px solid teal;
+}
+
+.Logo2
+{
+    float: left;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: grey;
+    font-size: 45px;
+}
+
+.secondPageLinks
+{
+    float:right;
+    padding: 0;
+    margin: 0 -20px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 40px;
+}
+
+.secondPageLinks a
+{
+    display: block;
+    padding: 5px;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+.secondPageLinks a:hover 
+{
+    font-size: 40px;
+    transition: .07;
+    color: grey;
+}
