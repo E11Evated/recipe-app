@@ -1,0 +1,32 @@
+* 
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.searchBarMainPage
+{
+    text-align: center;
+    margin-top: 25%;
+}
+
+.searchBarMainPage input
+{
+    background-color: rgb(189, 185, 185);
+    color: teal;
+    font-weight: bold;
+    font-size: 45px;
+    width: 600px;
+    border-radius: 20px;
+    border: black solid 5px;
+}
+
+.searchBarMainPage button{
+    background-color: rgb(189, 185, 185);
+    color: teal;
+    font-weight: bold;
+    font-size: 45px;
+    width: 600px;
+    border-radius: 20px;
+    border: black solid 5px;
+}
+
