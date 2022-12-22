@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body
+{
+    background-color: grey;
+}
+
+.NavBar
+{
+    display: flex;
+    align-items: baseline;
+    z-index: 50;
+    height: 100px;
+    background-color: black;
+    border-bottom: 20px solid teal;
+}
+
+.Logo2
+{
+    float: left;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: grey;
+    font-size: 45px;
+    text-decoration: underline;
+    text-decoration-thickness: auto;
+    text-decoration-color: teal;
+}
+
+.secondPageLinks
+{
+    float:right;
+    padding: 0;
+    margin: 0 -20px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 40px;
+
+}
+
+.secondPageLinks a
+{
+    display: block;
+    padding: 5px;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: auto;
+    text-decoration-color: teal;
+}
+
+.secondPageLinks a:hover 
+{
+    font-size: 40px;
+    transition: .07 ease;
+    color: grey;
+}
+
+.hamburgerMenu
+{
+    display: block;
+    position: relative;
+    z-index: 50;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+
+.hamburgerMenuBar
+{
+    display:block;
+    width
+}
