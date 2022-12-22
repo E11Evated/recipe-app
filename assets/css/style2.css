@@ -23,10 +23,6 @@
     text-decoration: underline;
 }
 
-.navTitle.One:hover {
-    text-decoration: underline;
-}
-
 .navTitle.One {
     color: white;
     margin: auto;
@@ -114,8 +110,9 @@ form ion-icon{
     width: 100%;
     border-radius: 8px;
     background-color: rgb(37, 37, 37);
-    padding: 15px;
+    padding: 7.5px;
     overflow: hidden;
+
 }
 .item img{
     width: 100%;
@@ -126,23 +123,32 @@ form ion-icon{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.item .flex-container:hover{
+    text-decoration: underline;
 }
 .item .title{
     color: whitesmoke;
     margin: 20px 10px 0 0;
     font-size: 1.8rem;
     font-weight: 400;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 .view-button{
     text-decoration: none;
     text-align: center;
-    width: 130px;
-    padding: 10px 0;
+    width: 150px;
+    padding: 10px;
     background-color: #404041;
     color: white;
     font-size: 1.4rem;
     margin-top: 20px;
     align-self: flex-start;
+    white-space: nowrap;
 }
 .item-data{
     color: whitesmoke;
@@ -151,6 +157,8 @@ form ion-icon{
     font-size: 1.4rem;
     letter-spacing: .05rem;
     line-height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
 
 @media (max-width: 768px){
