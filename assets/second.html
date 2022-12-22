@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title> Second Page </title>
+</head>
+<body>
+    <div class="NavBar">
+        <div class="Logo2"> <strong> Recipe App </strong></div>
+        <ul class="secondPageLinks">
+            <li><a href="#"> <strong> Most Recent Recipes </strong></a></li>
+            <li><a href="#"> <strong> Recomended Recipes </strong></a></li>
+        </ul>
+        <div class="hamburgerMenu">
+            <span class="hamburgerMenuBar"></span>
+            <span class="hamburgerMenuBar"></span>
+            <span class="hamburgerMenuBar"></span>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <h1 class="brand">Recipe App</h1>
+            <form id="search-form">
+              <label for="dish">Enter a dish:</label>
+              <input type="text" name="dish" id="dish">
+              <button type="submit">Find wine pairing</button>
+            </form>
+            <div class="search-result">
+                <div class="item">
+                  <div id="wineDiv"></div>
+                  <div id="recipeDiv"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/script/script2.js"></script>
+</body>
+</html>
