@@ -29,9 +29,8 @@ function displayResults(data) {
 
   // Clear any existing content in the results container
   resultsContainer.innerHTML = '';
-
   // Check for the presence of the pairings property
-  if (!data.pairings || !data.pairingText) {
+  if (!data.pairedWines || !data.pairingText) {
     // If the pairings property does not exist, display an error message
     const errorMessage = document.createElement('div');
     errorMessage.classList.add('error-message');
@@ -39,19 +38,26 @@ function displayResults(data) {
     resultsContainer.appendChild(errorMessage);
     return;
   }
+//
+  const pairingText = document.createElement('p');
+  pairingText.textContent = data.pairingText;
+  resultsContainer.appendChild(pairingText);
 
-  // If the pairings property exists, iterate over the wine pairing suggestions
-  for (const pairing of data.pairings) {
-    // Create an HTML element to hold the pairing suggestion
-    const pairingElement = document.createElement('div');
-    pairingElement.classList.add('pairing');
+  // Display the product matches
+  data.productMatches.forEach((product) => {
+    const productDiv = document.createElement('div');
+    productDiv.classList.add('product');
 
-    // Set the text content of the element to the pairing suggestion
-    pairingElement.textContent = pairing;
+    const productTitle = document.createElement('h2');
+    productTitle.textContent = product.title;
+    productDiv.appendChild(productTitle);
 
-    // Append the element to the results container
-    resultsContainer.appendChild(pairingElement);
-  }
+    const productPrice = document.createElement('p');
+    productPrice.textContent = 'Price: ' + product.price;
+    productDiv.appendChild(productPrice);
+
+    resultsContainer.appendChild(productDiv);
+  });
 }
 
 //Define an event handler for the form submission
@@ -74,7 +80,5 @@ function handleFormSubmit(event) {
     });
 }
 
-
-// an event listener to the form to listen for submissions
 const form = document.querySelector('form');
 form.addEventListener('submit', handleFormSubmit);
