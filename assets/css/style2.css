@@ -1,157 +1,167 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-body
-{
-    background-color: grey;
-}
-
-.NavBar
-{
-    display: flex;
-    align-items: baseline;
-    z-index: 50;
-    height: 100px;
-    background-color: black;
-    border-bottom: 20px solid teal;
-}
-
-.Logo2
-{
-    float: left;
-    width: 35%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    color: grey;
-    font-size: 45px;
-    text-decoration: underline;
-    text-decoration-thickness: auto;
-    text-decoration-color: teal;
-}
-
-.secondPageLinks
-{
-    float:right;
-    padding: 0;
-    margin: 0 -20px;
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    font-size: 40px;
-
-}
-
-.secondPageLinks a
-{
-    display: block;
-    padding: 5px;
-    font-size: 35px;
-    font-weight: bolder;
+.body {
     color: white;
-    text-decoration: none;
-    text-decoration: underline;
-    text-decoration-thickness: auto;
-    text-decoration-color: teal;
-}
-
-.secondPageLinks a:hover 
-{
-    font-size: 40px;
-    transition: .07 ease;
-    color: grey;
-}
-
-.hamburgerMenu
-{
-    display: block;
-    position: relative;
-    z-index: 50;
-    cursor: pointer;
-    border: none;
-    outline: none;
+    background-color: #141414;
+    font-family: 'Courier New', Courier, monospace;
     
 }
 
-/* .hamburgerMenuBar
-{
-    display:block;
-    width
-} */
+.navBar {
+    border-radius: 10px;
+    background-color: #070707;
+    margin: auto;
+    padding: 5px;
+}
 
-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #00b8d4;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    font-weight: bold;
+.navTitle {
+    list-style-type: none;
+    display: inline;
+    font-size: 36px;
     cursor: pointer;
-  }
-  
-  .search-result {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  /* Add styles for the wine and recipe elements */
-  .item {
+}
+
+.navTitle:hover {
+    text-decoration: underline;
+}
+
+.navTitle.One {
+    color: white;
+    margin: auto;
+    padding: 5px 5px;
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.footer {
+    color: #282828;
+    position: static;
+    bottom: 0;
+    left: 15px;
+    font-size: 9px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
     width: 100%;
-  }
-  
-  #wineDiv {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  #recipeDiv {
+    height: 100%;
+    object-fit: cover;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-weight: 600;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .recipe {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 30%;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: #141414;
+}
+.container{
+    width: 90%;
+    height:auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.brand{
     text-align: center;
-  }
-  
-  @media (max-width: 768px){
+    font-size: 4rem;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+form{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 4px;
+}
+form input{
+    width: 85%;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+form ion-icon{
+    width: 9%;
+    font-size: 3rem;
+    margin: -9px;
+    color: gray;
+}
+.search-result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+.item{
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 37);
+    padding: 7.5px;
+    overflow: hidden;
+
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+}
+.item .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.item .flex-container:hover{
+    text-decoration: underline;
+}
+.item .title{
+    color: whitesmoke;
+    margin: 20px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.view-button{
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    background-color: #404041;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    align-self: flex-start;
+    white-space: nowrap;
+}
+.item-data{
+    color: whitesmoke;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+@media (max-width: 768px){
     .search-result{
         grid-gap: 10px
     }
@@ -161,4 +171,4 @@ form {
     .container form {
         max-width: 500px;
     }
-  }
+}
