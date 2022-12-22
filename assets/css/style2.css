@@ -19,6 +19,7 @@ body
     height: 100px;
     background-color: black;
     border-bottom: 20px solid teal;
+    position: relative;
 }
 
 .Logo2
@@ -37,6 +38,8 @@ body
     text-decoration-color: teal;
 }
 
+
+
 .secondPageLinks
 {
     float:right;
@@ -44,12 +47,11 @@ body
     margin: 0 -20px;
     width: 60%;
     height: 100%;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     font-size: 40px;
-
+    display: flex;
 }
 
 .secondPageLinks a
@@ -59,13 +61,14 @@ body
     font-size: 35px;
     font-weight: bolder;
     color: white;
+    background-color: black;
     text-decoration: none;
     text-decoration: underline;
     text-decoration-thickness: auto;
     text-decoration-color: teal;
 }
 
-.secondPageLinks a:hover 
+.secondPageLinks a:hover
 {
     font-size: 40px;
     transition: .07 ease;
@@ -86,5 +89,39 @@ body
 .hamburgerMenuBar
 {
     display:block;
-    width
+    width: 35px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: grey;
+    border-radius: 6px;
+    z-index: 50;
+    transform-origin: 0 0;
+    transition: 0.5s;
+}
+
+.hamburgerMenu:hover span:nth-child(2)
+{
+    transform: translateX(15px);
+    background-color: teal;
+}
+
+.hamburgerMenu.is-active span:nth-child(1)
+{
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburgerMenu.is-active span:nth-child(2)
+{
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.hamburgerMenu.is-active span:nth-child(3)
+{
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburgerMenu.is-active:hover span{
+    background-color: teal;
 }
