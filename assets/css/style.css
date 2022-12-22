@@ -9,6 +9,7 @@ img{
     height: 100%;
     object-fit: cover;
 }
+
 html{
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
@@ -51,7 +52,6 @@ form input{
     font-size: 2rem;
     display: inline-block;
 }
-
 form ion-icon{
     width: 9%;
     font-size: 3rem;
@@ -107,7 +107,6 @@ form ion-icon{
     letter-spacing: .05rem;
     line-height: 2rem;
 }
-
 @media (max-width: 768px){
     .search-result{
         grid-gap: 10px

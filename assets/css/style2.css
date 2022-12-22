@@ -6,6 +6,11 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body
+{
+    background-color: grey;
+}
+
 .NavBar
 {
     display: flex;
@@ -27,6 +32,9 @@
     list-style: none;
     color: grey;
     font-size: 45px;
+    text-decoration: underline;
+    text-decoration-thickness: auto;
+    text-decoration-color: teal;
 }
 
 .secondPageLinks
@@ -41,6 +49,7 @@
     align-items: center;
     list-style: none;
     font-size: 40px;
+
 }
 
 .secondPageLinks a
@@ -51,11 +60,31 @@
     font-weight: bolder;
     color: white;
     text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: auto;
+    text-decoration-color: teal;
 }
 
 .secondPageLinks a:hover 
 {
     font-size: 40px;
-    transition: .07;
+    transition: .07 ease;
     color: grey;
+}
+
+.hamburgerMenu
+{
+    display: block;
+    position: relative;
+    z-index: 50;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+
+.hamburgerMenuBar
+{
+    display:block;
+    width
 }
