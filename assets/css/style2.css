@@ -2,14 +2,15 @@
     color: white;
     background-color: #141414;
     font-family: 'Courier New', Courier, monospace;
-    
+    height: 100%;
+    width: 100%;
 }
 
 .navBar {
     border-radius: 10px;
     background-color: #070707;
     margin: auto;
-    padding: 5px;
+    padding: 8px;
 }
 
 .navTitle {
@@ -17,22 +18,31 @@
     display: inline;
     font-size: 36px;
     cursor: pointer;
+    color: white;
+    padding: 0 20px;
 }
 
 .navTitle:hover {
     text-decoration: underline;
+
 }
 
 .navTitle.One {
-    color: white;
-    margin: auto;
-    padding: 5px 5px;
-    list-style-type: none;
+    width: 300px;
+    padding: 9px 4px;
+    background-color: #27292a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: inline;
-    font-size: 20px;
+    text-align: center;
     float: right;
-    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
 }
+
+.navTitle.One:hover {
+    background-color: #CF213E;
+}
+
 
 .footer {
     color: #282828;
@@ -45,18 +55,22 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-html{
+
+html {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
+    background-color: #070707;
+    color: white;
 }
-section{
-    min-height: 100vh;
+
+section {
+    min-height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -64,26 +78,31 @@ section{
     padding: 100px 0;
     background-color: #141414;
 }
-.container{
+
+.container {
     width: 90%;
-    height:auto;
+    height: auto;
     max-width: 1200px;
     margin: 0 auto;
 }
-.brand{
+
+.brand {
     text-align: center;
     font-size: 4rem;
     color: whitesmoke;
     margin-bottom: 30px;
 }
-form{
+
+form {
     width: 90%;
     max-width: 400px;
     margin: 20px auto;
     background-color: white;
     border-radius: 4px;
+    background-color: rgb(232, 240, 254);
 }
-form input{
+
+form input {
     width: 85%;
     background-color: transparent;
     padding: 10px;
@@ -93,20 +112,30 @@ form input{
     display: inline-block;
 }
 
-form ion-icon{
+form ion-icon {
     width: 9%;
     font-size: 3rem;
     margin: -9px;
     color: gray;
 }
-.search-result{
+
+.hidden {
+    display: none;
+}
+
+.search-result {
+    display: none;
     margin-top: 50px;
     width: 100%;
-    display: grid;
-    grid-gap: 25px;
     grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+    background-color: #404041;
+    border-style: inset;
+    border-color: #CF213E;
+    font-size: 20px;
+    color: white;
 }
-.item{
+
+.item {
     width: 100%;
     border-radius: 8px;
     background-color: rgb(37, 37, 37);
@@ -114,12 +143,14 @@ form ion-icon{
     overflow: hidden;
 
 }
-.item img{
+
+.item img {
     width: 100%;
     height: 300px;
     border-radius: 4px;
 }
-.item .flex-container{
+
+.item .flex-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -127,10 +158,11 @@ form ion-icon{
     font-weight: bolder;
 }
 
-.item .flex-container:hover{
+.item .flex-container:hover {
     text-decoration: underline;
 }
-.item .title{
+
+.item .title {
     color: whitesmoke;
     margin: 20px 10px 0 0;
     font-size: 1.8rem;
@@ -138,7 +170,8 @@ form ion-icon{
     font-weight: bolder;
     text-decoration: underline;
 }
-.view-button{
+
+.view-button {
     text-decoration: none;
     text-align: center;
     width: 150px;
@@ -150,7 +183,8 @@ form ion-icon{
     align-self: flex-start;
     white-space: nowrap;
 }
-.item-data{
+
+.item-data {
     color: whitesmoke;
     display: block;
     margin-top: 10px;
@@ -161,13 +195,32 @@ form ion-icon{
     font-weight: lighter;
 }
 
-@media (max-width: 768px){
-    .search-result{
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    color: black;
+    transition: color 0.4;
+    font-size: 3.5em;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.social-icon:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .search-result {
         grid-gap: 10px
     }
-    .container .brand{
+
+    .container .brand {
         font-size: 4rem;
     }
+
     .container form {
         max-width: 500px;
     }
