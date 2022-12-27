@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style2.css">
-    <title> Second Page </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/850/850207.png">
+    <title>WINE AND DINE</title>
 </head>
+
 <body>
-    <div class="NavBar">
-        <div class="Logo2"> <strong> Recipe App </strong></div>
-        <ul class="secondPageLinks">
-            <li><a href="#"> <strong> Most Recent Recipes </strong></a></li>
-            <li><a href="#"> <strong> Recomended Recipes </strong></a></li>
+    <nav class="navBar">
+        <h1 class="navTitle">WINE AND DINE</h1>
+        <div class="message hidden">Welcome to Wine and Dine! Search for any kind of recipe or protein you want to start
+            with. For example, "Pizza" or "Steak” will display recipes and some detailed information about the recipes.
+            Also, you can save recipes by double clicking the name of the recipe you want to save. Then by clicking,
+            Favorite Recipes! in the navigation bar. It will display URL links to that saved recipe from local storage.
+            What to Drink tab on the navigation bar will pair wine to go with whatever meal you are having. Click the
+            search box and type in the meal you plan on having. For example, "Pasta Bolognese" or "Fish" will display
+            the right kind of wine to go with the meal you enter. Also display the price of that wine.</div>
+        <ul class="navTitle">
+            <li class="navTitle One"><a href="../index.html" style="color: white; text-decoration: none;">What's for
+                    Dinner?</a></li>
         </ul>
-        <div class="hamburgerMenu">
-            <span class="hamburgerMenuBar"></span>
-            <span class="hamburgerMenuBar"></span>
-            <span class="hamburgerMenuBar"></span>
-        </div>
+
+    </nav>
+    <div class="hamburgerMenu">
+        <span class="hamburgerMenuBar"></span>
+        <span class="hamburgerMenuBar"></span>
+        <span class="hamburgerMenuBar"></span>
+    </div>
     </div>
     <!-- JavaScript section -->
     <section>
         <div class="container">
-            <h1 class="brand">Recipe App</h1>
-            <form id="search-form">
-              <label for="dish">Enter a dish:</label>
-              <input type="text" name="dish" id="dish">
-              <button type="submit">Find wine pairing</button>
+            <h1 class="brand">What to Drink?</h1>
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_menpm2u0.json" background="transparent"
+                speed="1" style="height: 200px;" loop autoplay></lottie-player>
+            <form>
+                <input type="text" name="dish" id="dish" placeholder="search example: Fish"><ion-icon
+                    name="search"></ion-icon>
+                <!-- <button type="submit">Find wine pairing</button> -->
             </form>
+            <!-- <label for="dish">Enter a dish:</label>
+              <input type="text" name="dish" id="dish"> -->
+
             <div class="search-result">
                 <div class="item">
-                  <div id="wineDiv"></div>
-                  <div id="recipeDiv"></div>
+                    <div id="wineDiv"></div>
+                    <div id="recipeDiv"></div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="icon-container">
+        <a class="social-icon" href="https://github.com/E11Evated" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="./script/script2.js"></script>
 </body>
+
 </html>
