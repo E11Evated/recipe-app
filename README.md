@@ -36,6 +36,11 @@ Search for any kind of recipe or protein you want to start with. For example,
                         whatever meal you are having. Click the search box and type in the meal you plan on having. For
                         example, "Pasta Bolognese" or "Fish" will display the right kind of wine to go with the meal you
                         enter. Also display the price of that wine.
+                        
+## Deployed Application
+Website: https://e11evated.github.io/recipe-app/
+GitHub: https://github.com/E11Evated/recipe-app
+HTTPS: https://github.com/E11Evated/recipe-app.git
 
 ### Credits
 John Schoppmann, Carlos Vargas, Isaac McDaniel AKA Egg Roll, and Brandon Kerns
